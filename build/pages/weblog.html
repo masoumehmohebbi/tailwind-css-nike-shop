@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weblog</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../public/build/tailwind_output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#f7f7f7]">
+    <section class="body hidden"></section>
+
+    <nikeshop-header>
+      <a href="../public/products.html" slot="item_1">خانم‌ها</a>
+      <a href="../public/products.html" slot="item_2">آقایان</a>
+      <a href="../public/products.html" slot="item_3">کودک</a>
+      <a href="../public/weblog.html" slot="item_4">وبلاگ</a>
+    </nikeshop-header>
+
+    <section
+      class="relative flex items-center justify-center md:bg-[#E5E5E5] px-5 sm:pb-11"
+    >
+      <img
+        class="object-cover w-full overflow-hidden"
+        src="../assets/images/sooner-weblog.png"
+        alt=""
+      />
+      <span class="w-1/3 h-auto absolute">
+        <img
+          class="object-cover w-full h-full"
+          src="../assets/images/sooner-logo.png"
+          alt=""
+        />
+      </span>
+    </section>
+
+    <section
+      class="grid grid-cols-2 -xs:grid-cols-1 gap-y-7 gap-x-5 px-5 pb-24 pt-7 sm:pt-11"
+    >
+      <nikeshop-weblogitem cover="../assets/images/welog-img-1.png"></nikeshop-weblogitem>
+      <nikeshop-weblogitem cover="../assets/images/welog-img-2.png"></nikeshop-weblogitem>
+      <nikeshop-weblogitem cover="../assets/images/welog-img-1.png"></nikeshop-weblogitem>
+      <nikeshop-weblogitem cover="../assets/images/welog-img-2.png"></nikeshop-weblogitem>
+      <nikeshop-weblogitem cover="../assets/images/welog-img-2.png"></nikeshop-weblogitem>
+    </section>
+
+    <div class="pb-24 flex items-center justify-center px-5">
+      <div class="flex flex-1 items-center justify-center">
+        <div>
+          <nav
+            class="isolate inline-flex -space-x-px rounded-md shadow-sm bg-white"
+            aria-label="Pagination"
+          >
+            <a
+              href="#"
+              class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Previous</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-current="page"
+              class="relative z-10 text-white inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >1</a
+            >
+            <a
+              href="#"
+              class="relative text-slate-800 inline-flex items-center px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >2</a
+            >
+            <a
+              href="#"
+              class="relative hidden items-center px-4 py-2 text-sm font-semibold text-slate-800 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+              >3</a
+            >
+            <span
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-800 ring-1 ring-inset ring-gray-300 focus:outline-offset-0"
+              >...</span
+            >
+            <a
+              href="#"
+              class="relative text-slate-800 hidden items-center px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+              >8</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-800 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >9</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-800 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >10</a
+            >
+            <a
+              href="#"
+              class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+            >
+              <span class="sr-only">Next</span>
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <nikeshop-footerdesktop></nikeshop-footerdesktop>
+    <nikeshop-footermobile></nikeshop-footermobile>
+  </body>
+
+  <script type="module" src="../src/js/app.js"></script>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +7,242 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <title>Pasona</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </head>
 <body>
-    <!--Hero sectio-->
-    <div style="background-image: url('images/bg.jpg');" class="px-6 pt-7 pb-28 bg-center bg-cover md:px-10 md:bg-left xl:px-32">
-        <!--Header-->
-        <div class="flex flex-row justify-between">
-            <div>
-                <a href="#"><img class="w-24" src="images/logo.svg" alt="" srcset=""></a>
-            </div>
-            <ul class="flex flex-row gap-3">
-                <a class="font-sans font-semibold text-white text-base uppercase hover:text-orange-600" href="#"><li>Me</li></a>
-                <a class="font-sans font-semibold text-white text-base uppercase hover:text-orange-600" href="pages/blog.html"><li>Blog</li></a>
-            </ul>
-        </div>
+    
+    <section class="body hidden"></section>
+    <!-- <nav
+    class="md:flex md:items-center md:justify-between px-5 pb-7 pt-5 md:bg-[#E5E5E5]"
+  >
+    <span class="hidden md:flex">
+    <a href="/index.html" class="cursor-pointer">
+    <img src="images/nike-logo-black.png" alt="nike-shop-logo" />
+    </a>
+    </span>
+    <ul
+      class="sidebar pt-[3.6rem] transition-[left] duration-[0.5s] z-10 h-screen md:h-0 top-0 -left-[40rem] md:left-0 md:flex bg-white md:bg-transparent md:items-center md:z-auto fixed md:static -sm:w-48 w-[300px] md:w-auto md:py-0 py-4 md:pl-0 text-center"
+    >
+      <li class="w-full my-6 md:my-0 md:px-7 md:mx-1 font-medium cursor-pointer mt-6">
+        <a href="pages/products.html" class="text-lg text-slate-800 md:text-xl hover:text-primary duration-500">خانم‌ها</a>
+      </li>
+      <li class="w-full my-6 md:my-0 md:px-7 md:mx-1 font-medium cursor-pointer">
+        <a href="pages/products.html" class="text-lg text-slate-800 md:text-xl hover:text-primary duration-500">آقایان</a>
+      </li>
+      <li class="w-full my-6 md:my-0 md:px-7 md:mx-1 font-medium cursor-pointer">
+        <a href="pages/products.html" class="text-lg text-slate-800 md:text-xl hover:text-primary duration-500">کودک</a>
+      </li>
+      <li class="w-full my-6 md:my-0 md:px-7 md:mx-1 font-medium cursor-pointer">
+        <a href="pages/weblog.html" class="text-lg text-slate-800 md:text-xl hover:text-primary duration-500">وبلاگ</a>
+      </li>
+    </ul>
+    <div class="md:justify-between md:flex grid grid-cols-3 md:items-center ">
+     <article class="col-span-1 grid justify-start">
+     <div class="text-2xl ">
+     <a href="/public/shoppingCart.html">
+     <span
+       class="text-2xl p-1 border-[rgba(55, 73, 87, 0.2)] border-2 md:border-none rounded-lg flex items-center justify-center"
+     >
+       <svg
+         class="cursor-pointer fill-slate-800"
+         width="24"
+         height="24"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+       >
+         <path
+           d="M16.49 22.75H7.5c-1.72 0-3.01-.46-3.81-1.37-.8-.91-1.11-2.23-.9-3.94l.9-7.5c.26-2.21.82-4.19 4.72-4.19h7.2c3.89 0 4.45 1.98 4.72 4.19l.9 7.5c.2 1.71-.1 3.04-.9 3.94-.83.91-2.11 1.37-3.84 1.37ZM8.4 7.25c-2.88 0-3.02 1.14-3.23 2.86l-.9 7.5c-.15 1.27.03 2.2.54 2.77.51.57 1.41.86 2.69.86h8.99c1.28 0 2.18-.29 2.69-.86.51-.57.69-1.5.54-2.77l-.9-7.5c-.21-1.73-.34-2.86-3.23-2.86H8.4Z"
+          
+         />
+         <path
+           d="M16 8.75c-.41 0-.75-.34-.75-.75V4.5c0-1.08-.67-1.75-1.75-1.75h-3c-1.08 0-1.75.67-1.75 1.75V8c0 .41-.34.75-.75.75s-.75-.34-.75-.75V4.5c0-1.91 1.34-3.25 3.25-3.25h3c1.91 0 3.25 1.34 3.25 3.25V8c0 .41-.34.75-.75.75Z"
+          
+         />
+       </svg>
+     </span>
+     </a>
+   </div>
+     </article>
+      <span class="hidden md:flex md:p-1 md:mx-3 md:items-center md:justify-center">
+        <svg
+          class="cursor-pointer fill-slate-800"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+          ></path>
+        </svg>
+      </span>
+      <a href="/public/products.html" class="hidden md:flex md:p-1  md:items-center md:justify-center">
+        <svg
+          class="cursor-pointer "
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: #1e293b"
+        >
+          <path
+            d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"
+          ></path>
+        </svg>
+      </a>
+      <span class="md:hidden  col-span-1 grid justify-center">
+      <a href="/index.html" class="cursor-pointer ">
+      <img src="images/nike-logo-black.png" alt="nike-shop-logo" />
+      </a>
+    </span>
+     <article class="col-span-1 grid justify-end">
+  
 
-        <!--Hero content-->
-        <div class="flex flex-col items-center gap-7 mt-32 md:items-start">
-            <!--hero text-->
-            <div class="flex flex-col items-center gap-5 md:items-start">
-                <p class="font-sans font-bold text-orange-600 text-base uppercase">hello my name is</p>
-                <h1 class="font-serif font-extrabold text-white capitalize text-6xl text-center md:text-7xl lg:text-9xl md:text-start lg:w-1/2">patrick bradley</h1>
-                <h3 class="font-sans font-bold text-white text-base uppercase text-center md:text-start">i'm a writer and video blogger</h3>
-            </div>
-
-            <!--Hero socials-->
-            <div class="flex flex-row items-center gap-3">
-                <a href=""><iconify-icon class="text-white bg-zinc-800 rounded-full p-3 text-3xl" icon="mdi:facebook-messenger"></iconify-icon></a>
-                <a href=""><iconify-icon class="text-white bg-zinc-800 rounded-full p-3 text-3xl" icon="ri:twitter-fill"></iconify-icon></a>
-                <a href=""><iconify-icon class="text-white bg-zinc-800 rounded-full p-3 text-3xl" icon="ph:instagram-logo-fill"></iconify-icon></a>
-                <a href=""><iconify-icon class="text-white bg-zinc-800 rounded-full p-3 text-3xl" icon="mdi:youtube"></iconify-icon></a>
-            </div>
-        </div>
+   <span
+     class="text-xl cursor-pointer  md:hidden md:absolute left-5 md:right-0"
+   >
+     <div
+       id="hamburger-icon"
+       class="p-1 flex justify-center items-center border-[rgba(55, 73, 87, 0.2)] border-2 rounded-lg"
+     >
+       <ion-icon id="menu" name="menu"></ion-icon>
+     </div>
+   </span>
+     </article>
     </div>
-    <!--end of hero section-->
+  </nav> -->
+  
+  <nikeshop-header>
+    <a href="../public/products.html" slot="item_1">خانم‌ها</a>
+    <a href="../public/products.html" slot="item_2">آقایان</a>
+    <a href="../public/products.html" slot="item_3">کودک</a>
+    <a href="../public/weblog.html" slot="item_4">وبلاگ</a>
+  </nikeshop-header>
+
+    <!-- !Swiper slider mobile Section -->
+    <section class="px-5 sm:hidden">
+        <div class="swiper mySwiper swiper1">
+          <div class="swiper-wrapper">
+            <!-- item-1 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white h-48 rounded-2xl flex overflow-hidden justify-between items-center"
+              >
+                <div class="w-[56%] max-w-[300px] object-cover">
+                  <img
+                    class="w-full object-cover"
+                    src="images/newShoe-4.png"
+                    alt="nike-shoe"
+                  />
+                </div>
+                <div
+                  class="h-full flex flex-col justify-between py-6 -xs:px-0 -xs:pl-2 px-5 flex-auto items-end"
+                >
+                  <div class="relative w-full">
+                    <h5
+                      class="absolute left-0 text-[#6450a3] font-black -xs:text-sm text-md -top-3"
+                    >
+                      2022
+                    </h5>
+                    <h1
+                      class="absolute text-[#6450a3] -xs:text-base text-2xl font-black left-0"
+                    >
+                      کالکشن تابستان
+                    </h1>
+                  </div>
+                  <button
+                    class="px-3 py-2 -xs:py-1 -xs:px-3 -xs:text-xs text-sm font-medium text-white bg-primary rounded"
+                  >
+                    همین حالا بخر
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-2 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white h-48 rounded-2xl flex overflow-hidden justify-between items-center"
+              >
+                <div class="w-[56%] max-w-[300px] object-cover">
+                  <img
+                    class="w-full object-cover"
+                    src="images/newShoe-2.png"
+                    alt="nike-shoe"
+                  />
+                </div>
+                <div
+                  class="h-full flex flex-col justify-between py-6 -xs:px-0 -xs:pl-2 px-5 flex-auto items-end"
+                >
+                  <div class="relative w-full">
+                    <h5
+                      class="absolute left-0 text-[#6450a3] font-black -xs:text-sm text-md -top-3"
+                    >
+                      2022
+                    </h5>
+                    <h1
+                      class="absolute text-[#6450a3] -xs:text-base text-2xl font-black left-0"
+                    >
+                      کالکشن تابستان
+                    </h1>
+                  </div>
+                  <button
+                    class="px-3 py-2 -xs:py-1 -xs:px-3 -xs:text-xs text-sm font-medium text-white bg-primary rounded"
+                  >
+                    همین حالا بخر
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-3 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white h-48 rounded-2xl flex overflow-hidden justify-between items-center"
+              >
+                <div class="w-[56%] max-w-[300px] object-cover">
+                  <img
+                    class="w-full object-cover"
+                    src="images/newShoe-3.png"
+                    alt="nike-shoe"
+                  />
+                </div>
+                <div
+                  class="h-full flex flex-col justify-between py-6 -xs:px-0 -xs:pl-2 px-5 flex-auto items-end"
+                >
+                  <div class="relative w-full">
+                    <h5
+                      class="absolute left-0 text-[#6450a3] font-black -xs:text-sm text-md -top-3"
+                    >
+                      2022
+                    </h5>
+                    <h1
+                      class="absolute text-[#6450a3] -xs:text-base text-2xl font-black left-0"
+                    >
+                      کالکشن تابستان
+                    </h1>
+                  </div>
+                  <button
+                    class="px-3 py-2 -xs:py-1 -xs:px-3 -xs:text-xs text-sm font-medium text-white bg-primary rounded"
+                  >
+                    همین حالا بخر
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !-bottom-3 !static"></div>
+        </div>
+      </section>
 
     <!--Service section-->
     <div class="bg-zinc-900 px-6 py-10 flex flex-col gap-12 md:px-10 lg:py-24 xl:px-32">
@@ -199,5 +401,8 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper-slider.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

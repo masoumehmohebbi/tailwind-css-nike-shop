@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./build/tailwind_output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#f7f7f7] md:bg-[#E5E5E5]">
+    <section class="body hidden"></section>
+
+    <nikeshop-header>
+      <a href="../public/products.html" slot="item_1">خانم‌ها</a>
+      <a href="../public/products.html" slot="item_2">آقایان</a>
+      <a href="../public/products.html" slot="item_3">کودک</a>
+      <a href="../public/weblog.html" slot="item_4">وبلاگ</a>
+    </nikeshop-header>
+
+    <section class="grid grid-cols-12 w-full px-5 pb-24">
+      <main
+        class="md:bg-white p-5 col-span-12 md:col-span-7 rounded-tr-2xl rounded-br-2xl flex flex-col gap-y-7 items-center"
+      >
+        <div class="w-full border-b border-[#E5E5E5] flex flex-col gap-y-3 pb-2">
+          <span class="w-full flex justify-between">
+            <h1 class="text-xl md:text-2xl font-black text-slate-800">سبد خرید</h1>
+            <a
+              href="../public/index.html"
+              class="cursor-pointer md:hidden text-2xl p-2 border-[rgba(55, 73, 87, 0.2)] border-2 rounded-lg flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+              >
+                <path
+                  d="M13 4.99999H3L6.29 1.71C6.38373 1.61703 6.45812 1.50643 6.50889 1.38457C6.55966 1.26272 6.5858 1.13201 6.5858 0.999998C6.5858 0.867986 6.55966 0.737281 6.50889 0.615422C6.45812 0.493562 6.38373 0.382962 6.29 0.289999C6.10264 0.103748 5.84919 -0.000793457 5.585 -0.000793457C5.32081 -0.000793457 5.06736 0.103748 4.88 0.289999L0.59 4.58999C0.214412 4.96334 0.00223279 5.47042 0 5.99999C0.00486659 6.5261 0.216844 7.02909 0.59 7.39999L4.88 11.7C4.97324 11.7926 5.0838 11.8659 5.20537 11.9157C5.32694 11.9656 5.45714 11.991 5.58854 11.9905C5.71993 11.9901 5.84995 11.9637 5.97116 11.913C6.09238 11.8623 6.20242 11.7882 6.295 11.695C6.38758 11.6017 6.46089 11.4912 6.51075 11.3696C6.5606 11.248 6.58602 11.1178 6.58556 10.9864C6.58509 10.8551 6.55875 10.725 6.50804 10.6038C6.45733 10.4826 6.38324 10.3726 6.29 10.28L3 6.99999H13C13.2652 6.99999 13.5196 6.89463 13.7071 6.7071C13.8946 6.51956 14 6.26521 14 5.99999C14 5.73478 13.8946 5.48042 13.7071 5.29289C13.5196 5.10535 13.2652 4.99999 13 4.99999Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </span>
+          <span>
+            <span class="px-2 text-white font-medium bg-primary rounded-full">3</span>
+            <span class="text-slate-700">عدد کالا</span>
+          </span>
+        </div>
+        <nikeshop-cartproduct
+          cover="../assets/images/shoppingCart-img-1.png"
+        ></nikeshop-cartproduct>
+
+        <nikeshop-cartproduct
+          cover="../assets/images/shoppingCart-img-2.png"
+        ></nikeshop-cartproduct>
+
+        <nikeshop-cartproduct
+          cover="../assets/images/shoppingCart-img-3.png"
+        ></nikeshop-cartproduct>
+
+        <div class="bg-[#E5E5E5] border w-full h-[1px]"></div>
+
+        <div class="flex flex-col w-full gap-y-6">
+          <span class="w-full text-[#888888] flex gap-2 items-center">
+            <h2 class="text-slate-800 text-lg">کد تخفیف:</h2>
+            <input
+              class="w-40 sm:w-auto text-slate-800 text-xs sm:text-base outline-none p-1 rounded-md"
+              type="text"
+              placeholder="کد تخفیف را وارد کنید"
+            />
+          </span>
+          <span class="w-full text-[#888888] flex gap-2 items-center">
+            <h2>جمع:</h2>
+            <h2>$148.00</h2>
+          </span>
+          <span class="w-full text-[#888888] flex gap-2 items-center">
+            <h2>هزینه ارسال:</h2>
+            <h2>$2.50</h2>
+          </span>
+          <span class="w-full text-black flex gap-2 items-center font-black text-lg">
+            <h2 class="text-slate-800">جمع کل:</h2>
+            <h2 class="text-slate-800">$150.50</h2>
+          </span>
+        </div>
+
+        <div class="block md:hidden bg-[#E5E5E5] border w-full h-[1px]"></div>
+
+        <div class="flex md:hidden flex-col w-full">
+          <h1>روش‌های پرداخت</h1>
+          <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
+            <label
+              class="w-32 mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+              for="radioDefault01"
+            >
+              کیف پول اعتباری
+            </label>
+            <input type="radio" name="flexRadioDefault" id="radioDefault01" />
+          </div>
+          <div class="mb-[0.125rem] min-h-[1.5rem] pl-[1.5rem] flex items-center">
+            <label
+              class="w-32 mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+              for="radioDefault02"
+            >
+              کارت اعتباری
+            </label>
+            <input type="radio" name="flexRadioDefault" id="radioDefault02" checked />
+          </div>
+        </div>
+
+        <button
+          class="bg-primary rounded-md text-white font-black text-md px-8 py-3 mt-6"
+        >
+          ادامه و پرداخت
+        </button>
+      </main>
+      <aside
+        class="hidden sticky top-0 w-full h-screen items-center gap-y-11 md:flex md:flex-col bg-slate-800 col-span-5 rounded-tl-2xl rounded-bl-2xl"
+      >
+        <div class="w-full flex items-center justify-end p-5">
+          <img class="" src="../assets/images/nike-logo-white.png" alt="" />
+        </div>
+        <div class="border-b-2 border-white w-4/5 text-center">
+          <h1 class="font-black text-4xl text-white pb-2">اطلاعات پرداخت</h1>
+        </div>
+        <h3 class="font-black text-2xl text-white">روش‌های پرداخت</h3>
+        <div class="flex w-full justify-evenly">
+          <span class="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="39"
+              height="39"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                d="M58.667 24.667H5.333c-1.093 0-2-.907-2-2 0-1.094.907-2 2-2h53.334c1.093 0 2 .906 2 2 0 1.093-.907 2-2 2zM21.333 46H16c-1.093 0-2-.907-2-2s.907-2 2-2h5.333c1.094 0 2 .907 2 2s-.906 2-2 2zM38.667 46H28c-1.093 0-2-.907-2-2s.907-2 2-2h10.667c1.093 0 2 .907 2 2s-.907 2-2 2z"
+                fill="#E832B5"
+              />
+              <path
+                d="M46.827 56.667H17.173c-10.613 0-13.84-3.2-13.84-13.707V21.04c0-10.507 3.227-13.707 13.84-13.707H46.8c10.613 0 13.84 3.2 13.84 13.707v21.893c.027 10.534-3.2 13.734-13.813 13.734zM17.173 11.333c-8.373 0-9.84 1.44-9.84 9.707v21.893c0 8.267 1.467 9.707 9.84 9.707H46.8c8.373 0 9.84-1.44 9.84-9.707V21.04c0-8.267-1.467-9.707-9.84-9.707H17.173z"
+                fill="#E832B5"
+              />
+            </svg>
+            <h1 class="text-[#e832b5]">کارت اعتباری</h1>
+          </span>
+
+          <span class="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="39"
+              height="39"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                d="M47.307 60.667H16.693c-6.64 0-12.026-5.387-12.026-12.027V30.693c0-6.64 5.386-12.026 12.026-12.026h30.614c6.64 0 12.026 5.386 12.026 12.026v3.84c0 1.094-.906 2-2 2h-5.386c-.934 0-1.787.347-2.4.987l-.027.027a3.366 3.366 0 0 0-1.013 2.72c.16 1.76 1.84 3.173 3.76 3.173h5.066c1.094 0 2 .907 2 2v3.173c0 6.667-5.386 12.054-12.026 12.054zm-30.614-38c-4.426 0-8.026 3.6-8.026 8.026V48.64c0 4.427 3.6 8.027 8.026 8.027h30.614c4.426 0 8.026-3.6 8.026-8.027v-1.173h-3.066c-4.027 0-7.44-2.987-7.76-6.827-.214-2.187.586-4.347 2.186-5.92 1.387-1.413 3.254-2.187 5.254-2.187h3.386v-1.84c0-4.426-3.6-8.026-8.026-8.026H16.693z"
+                fill="#fff"
+              />
+              <path
+                d="M6.667 35.093c-1.094 0-2-.906-2-2V20.907c0-3.974 2.506-7.574 6.213-8.987l21.173-8c2.187-.827 4.614-.533 6.507.8a7.05 7.05 0 0 1 3.04 5.814v10.133c0 1.093-.907 2-2 2s-2-.907-2-2V10.533c0-1.013-.48-1.946-1.333-2.533-.854-.587-1.867-.72-2.827-.347l-21.173 8c-2.16.827-3.627 2.934-3.627 5.254v12.186c.027 1.12-.88 2-1.973 2zM52.267 47.467c-4.027 0-7.44-2.987-7.76-6.827-.214-2.214.586-4.373 2.186-5.947 1.36-1.386 3.227-2.16 5.227-2.16h5.547c2.64.08 4.666 2.16 4.666 4.72v5.494a4.72 4.72 0 0 1-4.586 4.72h-5.28zm5.146-10.934h-5.466c-.934 0-1.787.347-2.4.987-.774.746-1.147 1.76-1.04 2.773.16 1.76 1.84 3.174 3.76 3.174h5.226c.347 0 .667-.32.667-.72v-5.494c0-.4-.32-.693-.747-.72z"
+                fill="#fff"
+              />
+              <path
+                d="M37.333 34H18.667c-1.094 0-2-.907-2-2s.906-2 2-2h18.666c1.094 0 2 .907 2 2s-.906 2-2 2z"
+                fill="#fff"
+              />
+            </svg>
+            <h1 class="text-white">کیف پول اعتباری</h1>
+          </span>
+        </div>
+        <div
+          class="flex bottom-11 absolute justify-between items-center text-white w-full px-5"
+        >
+          <p>تمام پرداخت ها تضمین شده است</p>
+          <a href="#">نیاز به کمک دارید؟</a>
+        </div>
+      </aside>
+    </section>
+
+    <nikeshop-footerdesktop></nikeshop-footerdesktop>
+    <nikeshop-footermobile></nikeshop-footermobile>
+
+    <script type="module" src="../src/js/app.js"></script>
+  </body>
+</html>
