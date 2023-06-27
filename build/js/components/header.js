@@ -6,8 +6,8 @@ template.innerHTML = `
     class="md:flex md:items-center md:justify-between px-5 pb-7 pt-5 md:bg-[#E5E5E5]"
   >
     <span class="hidden md:flex">
-    <a href="/public/index.html" class="cursor-pointer">
-    <img src="../assets/images/nike-logo-black.png" alt="nike-shop-logo" />
+    <a href="/build/index.html" class="cursor-pointer">
+    <img src="/build/images/nike-logo-black.png" alt="nike-shop-logo" />
     </a>
     </span>
     <ul
@@ -82,7 +82,7 @@ template.innerHTML = `
       </a>
       <span class="md:hidden  col-span-1 grid justify-center">
       <a href="/public/index.html" class="cursor-pointer ">
-      <img src="../assets/images/nike-logo-black.png" alt="nike-shop-logo" />
+      <img src="/build/images/nike-logo-black.png" alt="nike-shop-logo" />
       </a>
     </span>
      <article class="col-span-1 grid justify-end">
