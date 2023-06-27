@@ -1,6 +1,6 @@
 const template = document.createElement('template')
 template.innerHTML = `
-    <link rel="stylesheet" href="/public/build/tailwind_output.css">
+    <link rel="stylesheet" href="/build/css/style.css">
     <footer class="relative bottom-0 right-0 left-0 mt-60 md:mt-[150px] md:flex md:flex-row">
       <div
         class="bg-primary w-full -md:h-60 flex items-center justify-center md:inline-block"
