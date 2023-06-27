@@ -1870,16 +1870,16 @@ select {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-\[left\] {
-  transition-property: left;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-\[left\] {
+  transition-property: left;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1890,32 +1890,6 @@ select {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.change-sidebar {
-  left:0;
-}
-
-.change-hamburger-icon {
-  position: fixed;
-  transition: all 0.5s;
-  z-index: 10;
-  left: 1.25rem;
-  top: 1.60rem;
-}
-
-.body {
-  transition: filter 0.5s ease;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-}
-
-.body-blur {
-  background-color: #000000a4;
-  opacity: 0.5;
-  z-index: 2;
-  display: block;
 }
 
 .after\:\!text-\[18px\]::after {
