@@ -26,7 +26,7 @@ git clone https://github.com/masoumehmohebbi/nike-shop/
 #### Then, install necessary npm packages:
 npm i
 #### Finally, run the `dev` script and preview project on a local server:
-npm run dev-tw
+npm run watch
 
 #### In order to format the code with Prettier, I uploaded prittier config file ".prettierrc".
 
