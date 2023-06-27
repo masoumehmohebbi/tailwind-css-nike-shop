@@ -1,6 +1,6 @@
 const template = document.createElement('template')
 template.innerHTML = `
-    <link rel="stylesheet" href="/public/build/tailwind_output.css">
+    <link rel="stylesheet" href="/build/css/style.css">
     
     <div class="flex flex-col bg-white rounded-2xl overflow-hidden md:flex-row">
     <div class="h-[150px] sm:h-[200px] overflow-hidden">
