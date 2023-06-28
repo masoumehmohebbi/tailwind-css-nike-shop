@@ -11,6 +11,7 @@ let swiper1 = new Swiper('.swiper1', {
     },
   });
 
+
   // new shoes parts
   let swiper2 = new Swiper('.swiper2', {
     slidesPerView: window.innerWidth > 890 ?
